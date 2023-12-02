@@ -5,16 +5,19 @@ use crate::data_struct::pos3::*;
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct EntityList {
-    pub data: HashMap<u64, Option<u64>>
+    pub data: HashMap<u64, Option<u64>>,
 }
+
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct NamePtr {
-    pub data: HashMap<u64, Option<u64>>
+    pub data: HashMap<u64, Option<u64>>,
 }
+
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct NameList {
-    pub data: HashMap<u64, Option<String>>
+    pub data: HashMap<u64, Option<String>>,
 }
+
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct Player {
     pub index: u64,
@@ -36,8 +39,9 @@ pub struct LocalPlayer {
     pub camera_position: Pos3,
     pub pitch: f32,
     pub yaw: f32,
-    pub player: Player
+    pub player: Player,
 }
+
 #[derive(Debug, Copy, Clone, Default, Serialize, Deserialize)]
 pub struct Hitbox {
     pub head: Bone,
