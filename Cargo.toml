@@ -1,5 +1,5 @@
 [package]
-name = "mem_strcut"
+name = "mem_struct"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,6 +8,9 @@ edition = "2021"
 
 
 [dependencies]
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+named_constants = "*"
 
 [features]
 apex = []

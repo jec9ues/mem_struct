@@ -1,4 +1,5 @@
 use std::ops::{Add, AddAssign, Sub, SubAssign};
+use serde::{Deserialize, Serialize};
 
 
 /// A position on screen.
@@ -7,9 +8,7 @@ use std::ops::{Add, AddAssign, Sub, SubAssign};
 ///
 /// Mathematically this is known as a "point", but the term position was chosen so not to
 /// conflict with the unit (one point = X physical pixels).
-#[repr(C)]
-#[derive(Clone, Copy, Default, PartialEq)]
-#[cfg_attr(feature = "serde", derive(serde::Deserialize, serde::Serialize))]
+#[derive(Clone, Copy, Default, Serialize, Deserialize)]
 pub struct Pos2 {
     /// How far to the right.
     pub x: f32,
@@ -193,7 +192,7 @@ impl std::ops::IndexMut<usize> for Pos2 {
     }
 }
 
-impl Eq for Pos2 {}
+
 
 impl AddAssign<Pos2> for Pos2 {
     #[inline(always)]
