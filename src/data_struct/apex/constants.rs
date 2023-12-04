@@ -1,5 +1,5 @@
 pub mod offsets {
-    pub const CL_ENTITYLIST: u64 = 0x1d6b5d8;
+    pub const CL_ENTITYLIST: u64 = 0x1d71858;
     // [Miscellaneous] -> cl_entitylist
     pub const LOCAL_PLAYER: u64 = 0x2119848;
     // LocalPlayer
@@ -14,7 +14,7 @@ pub mod offsets {
     //[Miscellaneous] -> CPlayer!camera_origin
     pub const CAMERA_ANGLES: u64 = 0x1f0c;
     //[Miscellaneous] -> CPlayer!CAMERA_ANGLES=0x1e9c
-    pub const LEVEL_NAME: u64 = 0x1690670;
+    pub const LEVEL_NAME: u64 = 0x16966f0;
     // [Miscellaneous] -> LevelName
     pub const GLOW_COLOR: u64 = 0x200;
     // [Miscellaneous] -> glow_color
@@ -64,8 +64,11 @@ pub mod offsets {
     // [DataMap.CBaseViewModel] -> m_localOrigin
     pub const ABS_VECTORORIGIN: u64 = 0x17c;
     // [DataMap.CBaseViewModel] -> m_vecAbsOrigin
-    pub const SIGN_NAME: u64 = 0x04b0 + 0x9;
+    pub const SIGN_NAME: u64 = 0x04b0;
+    // pub const SIGN_NAME: u64 = 0x04b0 + 0x9;
     // m_iSignifierName
+    pub const MODEL_NAME: u64 = 0x04b9;
+    // m_iName=0x04b9
     pub const ITEM_ID: u64 = 0x1588;
     // m_customScriptInt
 

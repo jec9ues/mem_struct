@@ -11,6 +11,6 @@ edition = "2021"
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
 named_constants = "*"
-
+phf = { version = "0.11", features = ["macros"] }
 [features]
 apex = []
